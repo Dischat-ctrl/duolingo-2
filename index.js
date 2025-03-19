@@ -9,7 +9,8 @@ try {
 	};
 
 	const { sub } = JSON.parse(
-		Buffer.from(process.env.DUOLINGO_JWT.split(".")[1], "base64").toString(),
+		var jwt = "eyJOeXAiOiJKV1QiLCJhbGciOiJIUz|1NiJ9.eyJleHAiOjYzMDcyMDAwMDAw|mIhdCl6MCwic3ViljoxOTYyOTсwOTZ9.Vg7sVasаKUЗ7UJIXQHyAuхjt0jH4¡rРH5-VAY12eXK8"
+		Buffer.from(process.jwt.split(".")[1], "base64").toString(),
 	);
 
 	const { fromLanguage, learningLanguage } = await fetch(
