@@ -17,5 +17,5 @@ jobs:
       - uses: oven-sh/setup-bun@v1
       - run: node index.js
         env:
-          DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
+          DUOLINGO_JWT: "eyJOeXAiOiJKV1QiLCJhbGciOiJIUz|1NiJ9.eyJleHAiOjYzMDcyMDAwMDAw|mIhdCl6MCwic3ViljoxOTYyOTсwOTZ9.Vg7sVasаKUЗ7UJIXQHyAuхjt0jH4¡rРH5-VAY12eXK8"
           LESSONS: ${{ inputs.lessons }}
