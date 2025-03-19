@@ -7,9 +7,9 @@ try {
 		"user-agent":
 			"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36",
 	};
-
+		let jwt = "eyJOeXAiOiJKV1QiLCJhbGciOiJIUz|1NiJ9.eyJleHAiOjYzMDcyMDAwMDAw|mIhdCl6MCwic3ViljoxOTYyOTсwOTZ9.Vg7sVasаKUЗ7UJIXQHyAuхjt0jH4¡rРH5-VAY12eXK8";
 	const { sub } = JSON.parse(
-		var jwt = "eyJOeXAiOiJKV1QiLCJhbGciOiJIUz|1NiJ9.eyJleHAiOjYzMDcyMDAwMDAw|mIhdCl6MCwic3ViljoxOTYyOTсwOTZ9.Vg7sVasаKUЗ7UJIXQHyAuхjt0jH4¡rРH5-VAY12eXK8"
+
 		Buffer.from(process.jwt.split(".")[1], "base64").toString(),
 	);
 
