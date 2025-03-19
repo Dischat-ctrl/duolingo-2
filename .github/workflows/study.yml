@@ -1,4 +1,4 @@
-name: Do a Duolingo lesson
+name: Do a Duolingo lesson Nichas
 
 on:
   workflow_dispatch:
@@ -14,7 +14,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: oven-sh/setup-bun@v1
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
       - run: node index.js
         env:
           DUOLINGO_JWT: ${{ secrets.DUOLINGO_JWT }}
